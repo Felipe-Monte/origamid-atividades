@@ -4,7 +4,7 @@ import Buttons from '../../components/Buttons';
 const Home = () => {
   return (
     <div>
-      Home
+      <h1>Página Home</h1>
       <Buttons />
     </div>
   );

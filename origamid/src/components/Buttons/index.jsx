@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Container } from './styles';
 
 const Buttons = () => {
   return (
-    <div>
-      <button>botao 1</button>
-      <button>botao 2</button>
-    </div>
-  )
-}
+    <Container>
+      <button>Produtos</button>
+      <button>Contato</button>
+    </Container>
+  );
+};
 
-export default Buttons
+export default Buttons;
