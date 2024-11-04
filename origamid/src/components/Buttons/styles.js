@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   gap: 10px;
   padding: 5px 10px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 
   button {
     width: 100px;

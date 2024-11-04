@@ -1,12 +1,22 @@
 import React from 'react';
+import { Container } from './styles';
 import Buttons from '../../components/Buttons';
+import CardProduct from '../../components/CardProduct';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Página Home</h1>
-      <Buttons />
-    </div>
+    <Container>
+      <header>
+        <Buttons />
+      </header>
+
+      <main>
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+      </main>
+    </Container>
   );
 };
 
