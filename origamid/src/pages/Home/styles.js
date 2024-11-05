@@ -5,11 +5,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  max-width: 64%;
+  max-width: 1000px;
   margin: auto;
   padding: 20px;
-/* 
-  border: 2px solid blueviolet; */
+
+  /* border: 2px solid blueviolet; */
 
   > header {
     width: 100%;
@@ -19,7 +19,8 @@ export const Container = styled.div`
     width: 100%;
 
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
     
     gap: 20px;
     flex-wrap: wrap;

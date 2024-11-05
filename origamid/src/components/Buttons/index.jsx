@@ -1,9 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Container } from './styles';
 
 const Buttons = () => {
+  const navigate = useNavigate();
+
   function handleClick(productName) {
-    console.log(`CLicou em ${productName}`);
+    if (productName === 'Produtos') {
+      navigate('/');
+    } else if (productName === 'Contato') {
+      navigate('/contact');
+    }
   }
 
   return (

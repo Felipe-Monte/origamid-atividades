@@ -3,7 +3,7 @@ import { Container, ContainerImg, TitleProduct } from './styles';
 
 const CardProduct = () => {
   return (
-    <Container>
+    <Container to="/details">
       <ContainerImg>
         <img src="/remedio.jpg" alt="imagem do produto" />
       </ContainerImg>
