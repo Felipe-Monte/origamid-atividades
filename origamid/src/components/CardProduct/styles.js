@@ -10,6 +10,12 @@ export const Container = styled.div`
 
   border-radius: 8px;
   overflow-x: hidden;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: .9;
+  }
 `;
 
 export const ContainerImg = styled.div`
