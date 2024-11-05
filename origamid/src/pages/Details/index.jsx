@@ -1,14 +1,15 @@
 import React from 'react';
+import { Container } from './styles';
 import Buttons from '../../components/Buttons';
 
 const Details = () => {
   return (
-    <div>
-       <header>
+    <Container>
+      <header>
         <Buttons />
       </header>
-      <h1>Detalhes do produto</h1>
-    </div>
+      <span>Detalhes do produto</span>
+    </Container>
   );
 };
 
