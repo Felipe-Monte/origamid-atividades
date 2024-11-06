@@ -22,15 +22,10 @@ const Home = () => {
         <Buttons />
       </header>
 
-      <div>
-        {dados ? <h2>{dados[3].nome}</h2> : <h2>Carregando...</h2>}
-      </div>
+      <div>{dados ? <h2>{dados[3].nome}</h2> : <h2>Carregando...</h2>}</div>
 
       <main>
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
+        {dados && dados.map((dado) => <CardProduct key={dado.id} title={dado.nome} />)}
       </main>
     </Container>
   );

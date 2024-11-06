@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, ContainerImg, TitleProduct } from './styles';
 
-const CardProduct = () => {
+const CardProduct = ({ title }) => {
   return (
     <Container to="/details">
       <ContainerImg>
@@ -9,7 +9,7 @@ const CardProduct = () => {
       </ContainerImg>
 
       <TitleProduct>
-        <span>Notebook</span>
+        <span>{title}</span>
       </TitleProduct>
     </Container>
   );
