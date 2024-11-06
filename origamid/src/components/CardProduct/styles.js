@@ -13,6 +13,7 @@ export const Container = styled(Link)`
   overflow-x: hidden;
 
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     opacity: .9;
@@ -35,11 +36,14 @@ export const ContainerImg = styled.div`
 `;
 
 export const TitleProduct = styled.div`
-  background-color: red;
+  background-color: white;
+  color: black; 
   height: 50px;
   width: 100%;
 
   text-align: left;
+
+  font-weight: bold;
 
   padding: 10px;
 `;

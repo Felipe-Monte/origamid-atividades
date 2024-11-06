@@ -22,10 +22,8 @@ const Home = () => {
         <Buttons />
       </header>
 
-      <div>{dados ? <h2>{dados[3].nome}</h2> : <h2>Carregando...</h2>}</div>
-
       <main>
-        {dados && dados.map((dado) => <CardProduct key={dado.id} title={dado.nome} />)}
+        {dados && dados.map((dado) => <CardProduct key={dado.id} title={dado.nome} photo={dado.fotos[0].src} />)}
       </main>
     </Container>
   );
