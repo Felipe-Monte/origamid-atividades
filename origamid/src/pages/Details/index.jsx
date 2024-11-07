@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, ImgDetails, ContainerText } from './styles';
 import Buttons from '../../components/Buttons';
 
 const Details = () => {
@@ -8,7 +8,11 @@ const Details = () => {
       <header>
         <Buttons />
       </header>
-      <span>Detalhes do produto</span>
+
+      <main>
+        <ImgDetails>foto</ImgDetails>
+        <ContainerText>texto</ContainerText>
+      </main>
     </Container>
   );
 };
