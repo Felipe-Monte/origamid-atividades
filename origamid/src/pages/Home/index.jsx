@@ -20,14 +20,16 @@ const Home = () => {
 
       <main>
         {dados &&
-          dados.map((dado) => (
-            <CardProduct
-              key={dado.id}
-              title={dado.nome}
-              photo={dado.fotos[0].src}
-              id={dado.id}
-            />
-          ))}
+          dados
+            .slice(0, 6)
+            .map((dado) => (
+              <CardProduct
+                key={dado.id}
+                title={dado.nome}
+                photo={dado.fotos[0].src}
+                id={dado.id}
+              />
+            ))}
       </main>
     </Container>
   );
