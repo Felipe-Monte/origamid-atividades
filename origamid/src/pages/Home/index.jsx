@@ -12,10 +12,6 @@ const Home = () => {
       .then((json) => setDados(json));
   }, []);
 
-  React.useEffect(() => {
-    console.log(dados);
-  }, [dados]);
-
   return (
     <Container>
       <header>
@@ -23,7 +19,15 @@ const Home = () => {
       </header>
 
       <main>
-        {dados && dados.map((dado) => <CardProduct key={dado.id} title={dado.nome} photo={dado.fotos[0].src} />)}
+        {dados &&
+          dados.map((dado) => (
+            <CardProduct
+              key={dado.id}
+              title={dado.nome}
+              photo={dado.fotos[0].src}
+              id={dado.id}
+            />
+          ))}
       </main>
     </Container>
   );

@@ -9,29 +9,34 @@ export const Container = styled.div`
   margin: auto;
   padding: 20px;
 
-  border: 2px solid blueviolet;
-
   > header {
     width: 100%;
   }
 
   > main {
-    min-width: 600px;
-    height: 400px;
+    max-width: 650px;
+    height: 500px;
 
-    margin-top: 20px;
+    margin-top: 50px;
 
     display: flex;
 
-    border: 2px solid wheat;
+    /* border: 2px solid wheat; */
   }
 `;
 
 export const ImgDetails = styled.div`
   width: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+
+  > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 `;
 export const ContainerText = styled.div`
   width: 100%;
-  border: 2px solid palevioletred;
+  padding: 20px;
+  /* border: 2px solid palevioletred; */
 `;

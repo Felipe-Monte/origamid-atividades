@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, ContainerImg, TitleProduct } from './styles';
 
-const CardProduct = ({ title, photo }) => {
+const CardProduct = ({ id, title, photo }) => {
   return (
-    <Container to="/details">
+    <Container to={`/details/${id}`}>
       <ContainerImg>
         <img src={photo} alt="imagem do produto" />
       </ContainerImg>
