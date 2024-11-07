@@ -25,6 +25,7 @@ const Details = () => {
         </ImgDetails>
         <ContainerText>
           <h2>{response ? response.nome : 'Carregando...'}</h2>
+          <h3>{response ? `R$: ${response.preco}` : 'Carregando...'}</h3>
           <p>{response ? response.descricao : 'Carregando...'}</p>
         </ContainerText>
       </main>
