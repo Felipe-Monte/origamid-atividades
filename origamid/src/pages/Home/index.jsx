@@ -21,7 +21,6 @@ const Home = () => {
       <main>
         {dados &&
           dados
-            .slice(0, 6)
             .map((dado) => (
               <CardProduct
                 key={dado.id}

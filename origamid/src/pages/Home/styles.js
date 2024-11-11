@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -16,16 +16,14 @@ export const Container = styled.div`
   }
 
   > main {
-    width: 100%;
-
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     gap: 20px;
     flex-wrap: wrap;
 
     padding: 20px 0px;
-    /* border: 2px solid green; */
   }
-`
+`;

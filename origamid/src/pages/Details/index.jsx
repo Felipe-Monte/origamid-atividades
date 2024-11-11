@@ -21,7 +21,10 @@ const Details = () => {
 
       <main>
         <ImgDetails>
-          <img src={response ? response.fotos[0].src : 'Carregando...'} />
+          {response &&
+            response.fotos.map((foto, index) => (
+              <img key={index} src={foto.src} />
+            ))}
         </ImgDetails>
         <ContainerText>
           <h2>{response ? response.nome : 'Carregando...'}</h2>
