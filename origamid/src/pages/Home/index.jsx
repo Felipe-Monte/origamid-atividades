@@ -19,16 +19,18 @@ const Home = () => {
       </header>
 
       <main>
-        {dados &&
-          dados
-            .map((dado) => (
-              <CardProduct
-                key={dado.id}
-                title={dado.nome}
-                photo={dado.fotos[0].src}
-                id={dado.id}
-              />
-            ))}
+        {dados ? (
+          dados.map((dado) => (
+            <CardProduct
+              key={dado.id}
+              title={dado.nome}
+              photo={dado.fotos[0].src}
+              id={dado.id}
+            />
+          ))
+        ) : (
+          <p>Carregando...</p>
+        )}
       </main>
     </Container>
   );
