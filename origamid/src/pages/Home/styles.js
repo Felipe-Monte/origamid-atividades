@@ -16,7 +16,7 @@ export const Container = styled.div`
   }
 
   > main {
-    width: 800px;
+    max-width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
