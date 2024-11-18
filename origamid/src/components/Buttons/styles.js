@@ -16,17 +16,17 @@ export const Container = styled.div`
 
     border-radius: 8px;
 
-    background-color: gray;
+    background-color: rgba(255, 255, 255, 0.87);
     color: black;
   }
 
   a:hover {
-    background-color: white;
+    background-color: gray;
     cursor: pointer;
   }
 
   a:active {
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: #eee;
     color: #191516;
   }
 `;
