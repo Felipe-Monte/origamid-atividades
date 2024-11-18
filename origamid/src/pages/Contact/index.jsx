@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, Section, ContainerImg, ContainerText } from './styles';
 import Buttons from '../../components/Buttons';
 
 const Contact = () => {
@@ -8,7 +8,19 @@ const Contact = () => {
       <header>
         <Buttons />
       </header>
-      <span>Pagina de contato</span>
+
+      <Section>
+        <ContainerImg>
+          <img src="/contato.jpg" alt="imagem de contato" />
+        </ContainerImg>
+
+        <ContainerText>
+          <h2>Entre em contato</h2>
+          <p>felipe@email.com</p>
+          <p>99999-9999</p>
+          <p>Rua ali perto</p>
+        </ContainerText>
+      </Section>
     </Container>
   );
 };

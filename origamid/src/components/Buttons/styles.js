@@ -5,23 +5,27 @@ export const Container = styled.div`
   align-items: center;
   gap: 10px;
   padding: 5px 10px;
-  /* border: 2px solid red; */
-
-  button {
+ 
+  a {
     width: 100px;
     padding: 10px;
-    border: none;
-    border-radius: 8px;
+
+    text-decoration: none;
 
     font-size: 16px;
+
+    border-radius: 8px;
+
+    background-color: gray;
+    color: black;
   }
 
-  button:hover {
-    background-color: #191516;
+  a:hover {
+    background-color: white;
     cursor: pointer;
   }
 
-  button:active {
+  a:active {
     background-color: rgba(255, 255, 255, 0.87);
     color: #191516;
   }
